@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "name": "form"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "form_field": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.form-field"
+    }
+  }
+}

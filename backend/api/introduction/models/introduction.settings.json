@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "introductions",
+  "info": {
+    "name": "introduction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "paragraphe": {
+      "type": "component",
+      "repeatable": true,
+      "component": "paragraphe.paragraphe"
+    }
+  }
+}

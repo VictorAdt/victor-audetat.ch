@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_paragraphe_services",
+  "info": {
+    "name": "service",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe_fr": {
+      "type": "richtext"
+    },
+    "paragraphe_en": {
+      "type": "richtext"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_fr": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_paragraphe_paragraphes",
+  "info": {
+    "name": "paragraphe",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe_fr": {
+      "type": "richtext"
+    },
+    "paragraphe_en": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: diglu;
+    src: local("diglu"),
+         url(./../font/Diglu-Regular.ttf);
+    font-weight: bold;
+  }
+
+  body{
+      font-family: 'Messina Sans mono', 'Arial Narrow', Arial, sans-serif;
+  }

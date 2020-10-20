@@ -1,0 +1,405 @@
+/* Variables declaration */
+
+$mar: 75px;
+$pColor: #000;
+$sColor: #fff;
+
+/* Normalize */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    color: $pColor;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a {
+    color: $pColor;
+}
+
+/* Website */
+
+header {
+    div{
+        display: flex;
+        transition: 300ms all;
+        nav{
+            font-size: 18px;
+            margin-left: $mar;
+        }
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding: $mar;
+    box-sizing: border-box;
+    a {
+        font-style: none;
+        text-decoration: none;
+        color: $pColor;
+        h1 {
+            font-size: 18px;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex-direction: column;
+    main {
+        padding: 225px 75px 75px 75px;
+        box-sizing: border-box;
+        form{
+            margin-bottom: $mar;
+            button{
+                font-size: $mar;
+                font-family: 'Messina Sans mono', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: underline;
+                margin: $mar $mar $mar 0;
+            }
+        }
+        section {
+            padding-bottom: $mar;
+            box-sizing: border-box;
+        }
+        .introduction {
+            font-size: 75px;
+        }
+        .textBlock {
+            font-size: 38px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: $mar 12% 0 12%;
+            box-sizing: border-box;
+            h4 {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            div {
+                box-sizing: border-box;
+                margin-bottom: $mar;
+                line-height: 42px;
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    margin: 0 $mar $mar $mar;
+    font-size: $mar;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .footer__socialMedia__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -40px;
+        a {
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.form {
+    display: block;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    font-size: $mar;
+    height: 75px;
+    padding: 25px 0;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    transition: 0.2s ease;
+    font-family: 'Messina Sans mono', 'Arial Narrow', Arial, sans-serif;
+}
+
+input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+label {
+    color: grey;
+    font-size: $mar;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    font-family: 'Messina Sans mono', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+input:focus ~ label,
+input:valid  ~ label {
+    top: -10px;
+    font-size: 18px;
+    color: grey;
+    opacity: 1;
+}
+
+input:valid {
+    color: #000;
+}
+
+
+textarea:focus ~ label,
+textarea:valid  ~ label {
+    top: -10px;
+    font-size: 18px;
+    color: grey;
+    opacity: 1;
+}
+
+/* active state */
+textarea:focus ~ label {
+    top: -10px;
+    font-size: 18px;
+    color: grey;
+    opacity: 1;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: $mar;
+    padding: 25px 0;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: $mar;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2s ease;
+    font-family: 'Messina Sans mono', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+textarea:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+.change__langue{
+    animation: changeLanguage 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: grey;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@-moz-keyframes inputHighlighter {
+    from {
+        background: grey;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@keyframes inputHighlighter {
+    from {
+        background: grey;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@keyframes changeLanguage {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+input:valid{
+    color: $pColor
+}

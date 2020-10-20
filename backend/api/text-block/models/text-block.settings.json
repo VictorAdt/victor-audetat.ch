@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_blocks",
+  "info": {
+    "name": "text-block"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "service": {
+      "type": "component",
+      "repeatable": true,
+      "component": "paragraphe.service"
+    }
+  }
+}

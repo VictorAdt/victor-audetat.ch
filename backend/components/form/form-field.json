@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_form_form_fields",
+  "info": {
+    "name": "form-field",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "label_fr": {
+      "type": "string"
+    },
+    "label_en": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
